@@ -2,7 +2,7 @@ import axios from "axios";
 import { createContext, useEffect, useReducer } from "react";
 import { io } from "socket.io-client";
 import Reducer from "./Reducer";
-import { env } from "config/configUrl";
+import { baseUrlSocket } from "config/configUrl";
 
 // https://socialtnt.herokuapp.com
 // http://localhost:8800
@@ -10,7 +10,7 @@ const INITIAL_STATE = {
   user: null,
   isFetching: false,
   isLoadPost: false,
-  socket : io(env === "local" ? "http://localhost:8800" : "https://socialtnt-server.onrender.com"),
+  socket : io(baseUrlSocket),
   error: false,
   accessToken: JSON.parse(localStorage.getItem("accessToken")) || null,
   messagesCallVideo: [],
