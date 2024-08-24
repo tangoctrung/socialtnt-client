@@ -1,0 +1,162 @@
+.PostThemen{
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    padding: 20px;
+    position: relative;
+}
+
+/* css nôị dung bên trái */
+.PostThemen-left{
+    width: 300px;
+    height: calc(100vh - 50px);
+}
+.PostThemen-left-top{
+    margin-bottom: 30px;
+    width: 350px;
+}
+.PostThemen-left-top>p, .PostThemen-left-bottom>p{
+    font-size: 20px;
+}
+.PostThemen-left-top>h2{
+    font-size: 28px;
+    padding: 20px;
+}
+
+.PostThemen-left-bottom{
+    width: 350px;
+}
+.PostThemen-left-bottom-1{
+    display: none;
+    margin-top: 20px;
+}
+.PostThemen-left-bottom-1>p{
+    font-size: 20px;
+}
+.PostThemen-left-bottom-container{
+    margin-top: 20px;
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.PostThemen-left-bottom-container p{
+    padding: 15px 20px;
+    display: block;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.PostThemen-left-bottom-container p:hover{
+    background-color: rgb(204, 201, 201);
+}
+
+
+
+
+/* css nội dung ở giữa */
+.PostThemen-center{
+    width: calc(100vw - 600px);
+    display: flex;
+    justify-content: center;
+    min-width: 600px;
+    height: calc(100vh - 50px);
+}
+.PostThemen-center-1{
+    width: 650px;
+}
+.PostThemen-center-text{
+    font-size: 36px;
+    font-weight: bold;
+    color: #918e8e;
+    margin-top: 100px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+/* css nội dung bên phải */
+.PostThemen-right{
+    padding: 0px 10px 10px 10px;
+    width: 300px;
+    height: calc(100vh - 50px);
+    position: absolute;
+    right: 0px;
+}
+.PostThemen-right p{
+    font-size: 18px;
+}
+.PostThemen-right-bottom-container{
+    margin-top: 20px;
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.PostThemen-right-bottom-container p{
+    padding: 15px 20px;
+    display: block;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.PostThemen-right-bottom-container p:hover{
+    background-color: rgb(204, 201, 201);
+}
+
+/* css loading */
+.PostThemen-center-loading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.spinner-2 {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:8px solid;
+    border-color:lightblue;
+    border-right-color: orange;
+    animation:s2 1s infinite linear;
+}
+@keyframes s2 {to{transform: rotate(1turn)}}
+
+@media (min-width: 1201px) and (max-width: 1350px) {
+    .PostThemen-left-bottom-1{
+        display: block;    
+    }
+    .PostThemen-right{
+        display: none;
+    }
+    .PostThemen-left{
+        width: 400px;
+    }
+    .PostThemen-center{
+        width: calc(100vw - 400px); 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .PostThemen-left-bottom-1{
+        display: block;    
+    }
+    .PostThemen-right{
+        display: none;
+    }
+    .PostThemen-left{
+        width: 300px;
+    }
+    .PostThemen-left-bottom{
+        width: 300px;
+    }
+    .PostThemen-center{
+        width: calc(100vw - 300px); 
+    }
+    .PostThemen-center-1{
+        width: 550px;
+    }
+}

@@ -1,0 +1,159 @@
+.postSaved{
+    margin-top: 50px;
+    display: flex;
+}
+.postSaved-left{
+    max-width: 420px;
+    position: fixed;
+
+}
+.postSaved-Content{
+    margin-left: 420px;
+    width: calc(100vw - 420px);
+    display: flex;
+    flex-direction: column;
+}
+.postSaved-content-right>h2{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 32px;
+    font-weight: bold;
+    color:rgb(180, 179, 179);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.postSaved-content-left{
+    width: calc(100vw - 840px);
+    display: flex;
+    justify-content: center;
+}
+.postSaved-content-left-container{
+    width: calc(100vw - 840px - 300px);
+}
+.postSaved-content-right{
+    position: fixed;
+    right: 0;
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    width: 420px;
+    padding: 5px;
+    background-color: rgb(250, 250, 253);
+}
+.postSaved-content-right::-webkit-scrollbar{
+    width: 8px;
+}
+.postSaved-content-right::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: rgb(226, 222, 222);
+}
+.postSaved-content-right::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(102, 101, 101);
+}
+.postSaved-top-content-item{
+    margin-bottom: 20px;
+}
+
+.postsave-text{
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    color: gray;
+    font-weight: bold;
+
+}
+
+.postSaved-content-left-loading{
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.continuous-4 {
+    width: 200px;
+    height: 30px;
+    border-radius: 40px;
+    color: #514b82;
+    border: 2px solid;
+    position: relative;
+    overflow: hidden;
+}
+
+.continuous-4::before {
+    content: "";
+    position: absolute;
+    margin: 2px;
+    width: 14px;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    border-radius: inherit;
+    background: currentColor;
+    box-shadow: -10px 0 12px 3px currentColor;
+    clip-path: polygon(0 5%, 100% 0,100% 100%,0 95%,-30px 50%);
+    animation: ct4 1s infinite linear;
+}
+
+@keyframes ct4 {
+    100% {left: calc(100% + 20px)}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .postSaved-left{
+       display: none;
+    }
+    .postSaved-Content{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .postSaved-content-left{
+        width: 66.67%;
+    }
+    .postSaved-content-right{
+        width: 33.33%;
+    }
+    .postSaved-content-left-container{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1800px) {
+    .postSaved-left{
+        width: 320px;
+    }
+    .postSaved-Content{
+        margin-left: 320px;
+    }
+    .postSaved-content-left{
+        width: calc(100vw - 650px);
+    }
+    .postSaved-content-left-container{
+        width: 80%;
+    }
+    .postSaved-content-right{
+        width: 330px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    .postSaved-left{
+        width: 300px;
+    }
+    .postSaved-Content{
+        margin-left: 300px;
+    }
+    .postSaved-content-left{
+        width: calc(100vw - 630px);
+    }
+    .postSaved-content-left-container{
+        width: 90%;
+    }
+    .postSaved-content-right{
+        width: 330px;
+    }
+}

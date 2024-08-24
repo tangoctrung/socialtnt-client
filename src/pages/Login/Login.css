@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+.login{
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      rgba(194, 194, 194, 0.664),
+      rgba(172, 170, 170, 0.63)
+    ),
+    url("https://media-exp1.licdn.com/dms/image/C511BAQESMts2_-Kzow/company-background_10000/0/1526996466943?e=2159024400&v=beta&t=i70et-r4er1nnU6tWgyQGyCAqkyyX_48-8pJM2WXnm0")
+      center;
+}
+.login-left-container{
+    position: relative;
+}
+.login-left-container h2{
+    position: absolute;
+    top: -60px;
+    left: 10px;
+    font-size: 32px;
+    color:rgb(59, 58, 58);
+}
+.login-left{
+    width: 600px; 
+    height: 500px;
+    padding: 10px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.login-left::-webkit-scrollbar{
+    width: 0px;
+}
+.login-left::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.login-left::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: rgb(163, 151, 151);
+}
+.login-left-fast{
+    position: relative;
+    width: 170px;
+    height: 230px;
+    transition: all 0.2s ease;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.login-left-fast:hover .login-left-fast-close{
+    left: -3px;
+    top: -5px;
+}
+.login-left-fast:hover .login-left-fast-close i{
+    transform: scale(1.4);
+    background-color: rgb(233, 227, 227);
+    color: rgb(163, 160, 160);
+}
+.login-left-fast-close{
+    position: absolute;
+    top: -4px;
+    left: 0px;
+}
+.login-left-fast-close i{
+    font-size: 14px;
+    color: rgb(233, 229, 229);
+    padding: 2px 5px;
+    border-radius: 50%;   
+    background-color: gray;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+/* css loading */
+.login-left-loading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.spinner-2 {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:8px solid;
+    border-color:lightblue;
+    border-right-color: orange;
+    animation:s2 1s infinite linear;
+}
+@keyframes s2 {to{transform: rotate(1turn)}}
+
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 530px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.login-form h2{
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color: rgb(141, 99, 99);
+}
+.login-form p{
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.7);
+}
+.login-form .inputEmail{
+    margin-top: 80px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid rgba(143, 142, 142, 0.747);
+}
+.login-form .inputPassword{
+    margin-top: 40px;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid rgba(143, 142, 142, 0.747);
+}
+.login-form .inputEmail:focus, .login-form .inputPassword:focus{
+    border: 1px solid rgba(78, 165, 199, 0.74);
+    box-shadow: 0px 0px 5px 2px rgb(78, 165, 199);
+}
+.login-form>p{
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+}
+.login-form button{
+    margin-top: 40px;
+    width: 200px;
+    padding: 20px 20px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 2px solid rgba(0,0,0);
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.login-form button:hover{
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+}
+.login-form button:disabled{
+    background-color: rgba(0, 0, 0, 0.322);
+    cursor: not-allowed!important;
+    color: #fff;
+}
+.login-form span{
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgb(59, 58, 58);
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px){
+    .login-form{
+        width: 350px;
+        height: 450px;
+    }
+    .login-form button{
+        margin-top: 40px;
+        width: 150px;
+        padding: 15px 20px;
+    }
+    .login-form .inputEmail{
+        margin-top: 50px;
+    }
+    .login-left{
+        margin-right: 40px;
+        width: 500px;
+    }
+    .login-left-container h2{
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,82 @@
+.all-user{
+    margin-top: 50px;
+}
+
+.all-user-left{
+    width: 320px;
+    min-width: 250px;
+    position: fixed;
+}
+.all-user-container{
+    margin-left: 320px;
+    /* background-color: gray; */
+    width: calc(100vw - 320px);
+}
+
+.all-user-container-input{
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px 40px 20px;
+}
+.all-user-container-input input{
+    width: 30%;
+    padding: 10px 20px 5px 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid gray;
+}
+.all-user-container-input button{
+    padding: 10px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(48, 98, 131);
+}
+
+.spinner-1 {
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    border:10px solid;
+    border-color:#000 #0000;
+    animation:s1 1s infinite;
+}
+@keyframes s1 {to{transform: rotate(.5turn)}}
+.all-user-container-listUser{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 20px 20px 50px;
+}
+
+.all-user-container-listUser-loading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.all-user-container-listUser-loading p{
+    font-weight: bold;
+    color: gray;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .all-user-left{
+        width: 300px;
+    }
+    .all-user-container{
+        margin-left: 300px;
+        width: calc(100vw - 300px);
+    }
+    .all-user-container-input input{
+        width: 50%;
+    }
+}

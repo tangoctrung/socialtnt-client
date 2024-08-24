@@ -1,0 +1,96 @@
+.PostSmall{
+    width: 250px;
+    height: 350px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.PostSmall>p{
+    position: absolute;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    top: 30%;
+}
+.PostSmall-img{
+    width: 100%;
+    height: 100%;
+}
+.PostSmall-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.PostSmall-container{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    position: absolute;
+    transition: all 0.3s ease;
+    display: none;
+}
+.PostSmall:hover .PostSmall-container{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.PostSmall-container>span{
+    position: absolute;
+    color: rgb(226, 220, 220);
+    font-size: 14px;
+    padding: 5px;
+}
+.PostSmall-countImg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    color: rgb(223, 219, 219);
+}
+.PostSmall-countImg>span{
+    margin-right: 3px;
+}
+.PostSmall-countImg i{
+
+}
+.PostSmall-title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    width: 100%;
+}
+.PostSmall-title h3{
+    font-size: 24px;
+    text-align: center;
+    color:rgb(223, 219, 219);
+    width: 100%;
+}
+.PostSmall-like-dislike-comments{
+    width: 80%;
+    position: absolute;
+    bottom: 30px;
+    padding: 5px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    color:rgb(223, 219, 219);
+    display: flex;
+    justify-content: space-around;
+}
+.PostSmall-like{
+
+}
+.PostSmall-like span{
+    margin-right: 5px;
+}
+.PostSmall-like i{
+
+}

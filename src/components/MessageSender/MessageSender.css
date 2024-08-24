@@ -1,0 +1,141 @@
+.chat-center-2-itemMessage-sender{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.chat-center-2-itemMessage-sender-infoMessage{
+    width: 50px;
+    display: none;
+    margin-right: 5px;
+}
+.chat-center-2-itemMessage-sender:hover .chat-center-2-itemMessage-sender-infoMessage{
+    display:flex;
+    align-items: center;
+}
+.chat-center-2-itemMessage-sender-infoMessage i{
+    padding: 4px 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    color:rgb(148, 145, 145);
+}
+.chat-center-2-itemMessage-sender-infoMessage i:hover{
+    background-color:rgb(212, 211, 211);
+}
+.itemMessage-sender-text{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.itemMessage-sender-text p{
+    max-inline-size: 500px;
+    overflow-wrap: break-word;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(68, 157, 199);
+    white-space: pre-line;
+    color:#fff;
+    display: inline-block;
+}
+.chat-center-2-itemMessage-sender-text span{
+    float: right;
+    font-size:12px;
+}
+.itemMessage-sender-image{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+.itemMessage-sender-image img{
+    width: 120px;
+    margin: 3px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.itemMessage-sender-image video{
+    max-width: 200px;
+    max-height: 200px;
+    margin: 3px;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.showDocument-sender-content{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.showDocument-sender-content-1{
+    display: inline-block;
+}
+.showDocument-sender{
+    margin: 3px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    max-height: 50px;
+    color: #000;
+    text-decoration: none;
+    background-color: #d8d9cf;
+    border-radius: 30px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.showDocument-sender:hover p{
+    text-decoration: underline;
+}
+.showDocument-sender-icon{
+    font-size: 24px;
+    margin-right: 5px;
+}
+.showDocument-sender p{
+    font-size: 16px;
+}
+
+
+.chat-center-2-textReply div{
+    display: flex;
+    justify-content: flex-end;
+}
+.chat-center-2-textReply div:first-child p{
+    font-size: 12px;
+    font-style: italic;
+    color: rgb(77, 76, 76);
+}
+.chat-center-2-textReply div:last-child{
+    
+}
+.chat-center-2-textReply div:last-child p{
+    font-size: 14px;
+    padding: 10px 10px 14px 10px;
+    border-radius: 20px;
+    margin-bottom: -8px;
+    margin-right: 5px;
+    color:rgb(104, 102, 102);
+    background-color: rgb(147, 184, 218);
+    max-inline-size: 400px;
+    overflow-wrap: break-word;
+    white-space: pre-line;
+}
+.chat-center-2-textReply p{
+    display: inline-block;
+}
+.chat-center-2-itemMessage-sender-delete{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.chat-center-2-itemMessage-sender-delete p{
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(161, 159, 159);
+    color:rgb(148, 145, 145);
+}
+.chat-center-2-itemMessage-sender-delete p:hover{
+    cursor: not-allowed;
+}

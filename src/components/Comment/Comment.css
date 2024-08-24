@@ -1,0 +1,268 @@
+.countLike i{
+    margin-left: 3px;
+}
+
+.comment-container{
+    position: relative;
+}
+
+.post-itemComment{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.post-itemComment-avatar{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.post-itemComment-avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.post-itemComment-body{
+    max-width: 75%;
+}
+.post-itemComment-body-top{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 100%; 
+    min-width: 180px;
+    padding: 0px 15px 5px;
+    background-color: rgb(218, 216, 216);
+    border-radius: 10px;
+}
+.post-itemComment-body-top b{
+    font-size: 14px;
+    cursor: pointer;
+}
+.post-itemComment-body-top b:hover{
+    text-decoration: underline;
+}
+.post-itemComment-body-top span{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(36, 36, 36);
+    white-space: pre-line;
+}
+.post-itemComment-body-bottom{
+    max-width: 100%;
+    display: flex;
+    position: relative;
+}
+.post-itemComment-body-bottom p{
+    font-size: 12px;
+    color: rgb(83, 83, 83);
+    padding-right: 20px;
+    padding-left: 15px;
+}
+.post-itemComment-body-bottom p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.post-itemComment-body-bottom span{
+    font-size: 12px;
+    color: rgb(83, 83, 83);
+}
+.post-itemComment-body-bottom .countLike{
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+}
+
+.post-itemComment-menu{
+    position: relative;
+    margin-left: 5px;
+    
+}
+.post-itemComment-menu i{
+    padding: 10px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+.post-itemComment-menu i:hover{
+    background-color: rgb(235, 232, 232);
+}
+.post-itemComment-menu i{
+    color: gray;
+}
+.post-itemComment-menu-content{
+    display: none;
+    flex-direction: column;
+    padding: 5px 5px;
+    position: absolute;
+    width: 90px;
+    z-index: 10;
+    top: 30px;
+    right: -30px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+}
+
+.post-itemComment-menu i:hover~.post-itemComment-menu-content{
+    display: flex;
+}
+.post-itemComment-menu-content:hover{
+    display: flex;
+}
+.post-itemComment-menu-content span{
+    font-size: 12px;
+    cursor: pointer;
+    padding: 5px 0px 5px 8px;
+    border-radius: 5px;
+    color: rgb(63, 62, 62);
+    transition: all 0.3s ease;
+}
+.post-itemComment-menu-content span:hover{
+    background-color: rgb(217, 221, 224);
+}
+
+
+/* CSS replyComment */
+
+.post-replyComment{
+    /* position: absolute; */
+    bottom: -30px;
+    margin-bottom: 20px;
+    margin-left: 65px;
+    width: 80%;
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-replyComment-avatar{
+    height: 30px;
+    width: 30px;
+}
+.post-replyComment-avatar img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.post-replyComment-input{
+    width: 85%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.post-replyComment-input input{
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(233, 230, 230);
+}
+.post-replyComment-emoji{
+    position: relative;
+    display:flex;
+}
+.post-replyComment-emoji i:hover{
+    background-color: rgb(206, 204, 204);
+}
+.post-replyComment-emoji i{
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    color: rgb(97, 97, 95);
+    font-size: 20px;
+}
+.post-replyComment-picker{
+    position: absolute;
+    top: -330px;
+    left: -230px;
+    z-index: 100000;
+}
+
+/* EDIT COMMENT */
+.form-EditComment{
+    width: 100%;
+    height: 30px;
+    display:  flex;
+    align-items: center;
+}
+.form-EditComment input{
+    outline: none;
+    padding: 6px 10px;
+    border-radius: 20px;
+    width: 80%;
+    border: 1px solid #000;
+}
+.form-EditComment button{
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius:3px;
+    cursor: pointer;
+    margin-left: 5px;
+    color:rgb(63, 62, 62);
+    background-color: rgb(90, 199, 162);
+    color: white;
+}
+
+/* delete comment */
+.commentDelete{
+    margin-bottom: 10px;
+    display:  flex;
+    align-items: center;
+}
+
+.commentDelete img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.commentDelete span{
+    display: inline-block;
+    background-color: rgb(248, 245, 245);
+    font-size: 14px;
+    border-radius:20px;
+    padding: 4px 10px;
+    color:rgb(187, 184, 184);
+}
+
+
+/* css loading */
+.post-listReplyComment-loading {
+    width: 90%;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.spinner-7 {
+    width:20px;
+    height:20px;
+    --c:radial-gradient(farthest-side,#25b09b 92%,#0000);
+    background: 
+      var(--c) 50% 0,
+      var(--c) 50% 100%,
+      var(--c) 100% 50%,
+      var(--c) 0    50%;
+    background-size:6px 6px;
+    background-repeat:no-repeat;
+    animation:s7 1s infinite;
+  }
+  @keyframes s7 {to{transform: rotate(.5turn)}}
+
+@media screen and (min-width: 1201px) and (max-width: 1550px){
+    .post-itemComment-body{
+        max-width: 75%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .post-itemComment-body{
+        max-width: 73%;
+    }
+}

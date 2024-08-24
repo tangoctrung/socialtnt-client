@@ -1,0 +1,105 @@
+GET http://localhost:8800/api/replycomment/comment/61482e3308758546ccf67f1e HTTP/1.1
+
+
+###
+
+
+GET http://localhost:8800/api/posts/profile/6140a06b3fee095588756d69 HTTP/1.1
+
+###
+
+GET http://localhost:8800/api/posts?hashtag=tho HTTP/1.1
+
+###
+
+GET http://localhost:8800/api/comment/post/614806d408758546ccf66c70 HTTP/1.1
+
+###
+
+POST http://localhost:8800/api/comment/ HTTP/1.1
+content-type: application/json
+
+{
+    "writerId": "6140a06b3fee095588756d69",
+    "postId": "6157ab694510f40ac805fbe9",
+    "content": "xinh" 
+}
+
+###
+
+PUT http://localhost:8800/api/comment/615bfba7006f7c45c0253e6d/delete HTTP/1.1
+
+{
+    "content": "d!e!l!e!t!e",
+}
+
+###
+GET http://localhost:8800/api/users/nofollowings/6140a06b3fee095588756d69 HTTP/1.1
+
+
+###
+POST http://localhost:8800/api/conversations/ HTTP/1.1
+content-type: application/json
+
+{
+    "members": [
+        "6140a0d63fee095588756d6b",
+        "6140a11c3fee095588756d6f",
+    ],
+}
+
+###
+GET http://localhost:8800/api/conversationsgroup/6140a06b3fee095588756d69 HTTP/1.1
+
+
+###
+
+GET http://localhost:8800/api/posts?themen=khoahoccongnghe HTTP/1.1
+
+
+###
+
+PUT http://localhost:8800/api/notifications/deleteNotification HTTP/1.1
+content-type: application/json
+
+{
+    "userId": "6140a0d63fee095588756d6b",
+    "notiId": "6162dbc257f1d770307ddd84"
+}
+
+###
+GET http://localhost:8800/api/notifications/getNotification/6140a06b3fee095588756d69 HTTP/1.1
+
+
+###
+POST http://localhost:8800/api/userlogin/ HTTP/1.1
+content-type: application/json
+
+{
+    "userId": "6140a06b3fee095588756d69",
+    "password": "12345678"
+}
+
+###
+
+GET http://localhost:8800/api/userlogin/ HTTP/1.1
+
+
+###
+DELETE http://localhost:8800/api/userlogin/delete HTTP/1.1
+
+{
+    "userLoginId": "6164e11f8210d348c019e60a",
+}
+
+###
+POST http://localhost:8800/api/auth/login/ HTTP/1.1
+content-type: application/json
+
+{
+    "email": "trung@gmail.com",
+    "password": "12345678"
+}
+###
+GET http://localhost:8800/api/auth/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTQwYTA2YjNmZWUwOTU1ODg3NTZkNjkiLCJpYXQiOjE2MzQ1MjE4MDl9.Irlv9NCCKDPVJGd3XwC8ubE-aCxOcJSo2i84uAsWRmI

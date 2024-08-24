@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+.register{
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(194, 194, 194, 0.664), rgba(172, 170, 170, 0.63)),
+     url("https://media-exp1.licdn.com/dms/image/C511BAQESMts2_-Kzow/company-background_10000/0/1526996466943?e=2159024400&v=beta&t=i70et-r4er1nnU6tWgyQGyCAqkyyX_48-8pJM2WXnm0");
+}
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.register-form h2{
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color: rgb(141, 99, 99);
+}
+.register-form p{
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.7);
+}
+.register-form .inputUsername{
+    margin-top: 50px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid rgba(143, 142, 142, 0.747);
+}
+.register-form .inputEmail{
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid rgba(143, 142, 142, 0.747);
+}
+.register-form .inputPassword{
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid rgba(143, 142, 142, 0.747);
+}
+.register-form .inputUsername:focus, .register-form .inputEmail:focus, .register-form .inputPassword:focus{
+    border: 1px solid rgba(78, 165, 199, 0.74);
+    box-shadow: 0px 0px 5px 2px rgb(78, 165, 199);
+}
+.register-form>p{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.register-form button{
+    margin-top: 20px;
+    width: 200px;
+    padding: 20px 20px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(0,0,0);
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.register-form button:hover{
+    background-color: rgba(0, 0, 0, 0.822);
+    color: white;
+}
+.register-form span{
+    margin-top: 15px;
+    font-size: 15px;
+    color: rgb(59, 58, 58);
+    text-align: center;
+}

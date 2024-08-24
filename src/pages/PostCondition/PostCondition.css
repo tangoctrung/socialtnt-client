@@ -1,0 +1,105 @@
+.postCondition{
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    
+}
+
+/* css nôị dung bên trái */
+.postCondition-left{
+    padding: 20px;
+    width: 33.33%;
+    height: calc(100vh - 50px);
+}
+.postCondition-left-top{
+    margin-bottom: 30px;
+}
+.postCondition-left-top>p, .postCondition-left-bottom>p{
+    font-size: 20px;
+}
+.postCondition-left-top>h2{
+    font-size: 32px;
+    padding: 20px;
+}
+.postCondition-left-bottom-container{
+    margin-top: 20px;
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.postCondition-left-bottom-container p{
+    padding: 15px 20px;
+    display: block;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.postCondition-left-bottom-container p:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/* css nội dung ở giữa */
+.postCondition-center{
+    padding: 20px;
+    width: calc(100vw - 33.33%);
+    height: calc(100vh - 50px);
+}
+.postCondition-center-1{
+    width: 600px;
+}
+.postCondition-center-text{
+    font-size: 36px;
+    font-weight: bold;
+    color: #918e8e;
+    margin-top: 100px;
+}
+
+/* css nội dung bên phải */
+.postCondition-right{
+    width: 33.33%;
+    height: calc(100vh - 50px);
+}
+
+
+/* css loading */
+.postCondition-center-loading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.spinner-2 {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:8px solid;
+    border-color:lightblue;
+    border-right-color: orange;
+    animation:s2 1s infinite linear;
+}
+@keyframes s2 {to{transform: rotate(1turn)}}
+
+@media screen and (min-width: 1201px) and (max-width: 1500px){
+    .postCondition-center{
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        background-color: azure;
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .postCondition-center{
+        display: flex;
+        justify-content: center;
+        background-color: azure;
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    }
+    .postCondition-center-1{
+        width: 550px;
+    }
+}

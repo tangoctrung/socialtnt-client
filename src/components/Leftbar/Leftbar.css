@@ -1,0 +1,102 @@
+.leftbar{
+    width: 100%;
+    min-width: 250px;
+    height: calc(100vh - 50px);
+    padding-top: 15px;
+}
+.leftbar-top, .leftbar-bottom{
+    overflow-y: scroll;
+    padding-bottom: 10px;
+}
+.leftbar-top{
+    max-height: 40%;
+    border-bottom: 1.5px solid #000;
+}
+.leftbar-bottom{
+    max-height: 55%;
+    margin-top: 10px;
+}
+.leftbar-bottom p{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.leftbar-top::-webkit-scrollbar, .leftbar-bottom::-webkit-scrollbar{
+    width: 8px;
+}
+
+.leftbar-top::-webkit-scrollbar-thumb, .leftbar-bottom::-webkit-scrollbar-thumb{
+    background-color: rgb(175, 175, 175);
+    border-radius: 10px;
+}
+
+.leftbar-item{
+    margin-left: 10px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.leftbar-item:hover{
+    background-color: rgb(223, 222, 222);
+}
+.leftbar-item-div{
+    margin-right: 10px;
+    position: relative;
+}
+.leftbar-item-div strong{
+    font-size: 10px;
+    margin-left: 10px;
+    position: absolute;
+    top: -12px;
+    right: 0px;
+    padding: 3px 4px;
+    border-radius: 50%;
+    background-color: #f02849;
+    color: white;
+}
+.leftbar-item.image{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.leftbar-item.image img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.leftbar-item i{
+    font-size: 24px;
+    margin-right: 10px;
+    color: rgb(87, 86, 86);
+}
+.leftbar-item span{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(78, 78, 78);
+}
+.leftbar-item>strong{
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: rgb(26, 153, 33);
+    color: white;
+}
+.leftbar-text{
+    margin-top: 4px;
+    padding-left: 30px;
+}
+.leftbar-text span{
+    font-size: 13px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(104, 103, 103);
+}

@@ -1,0 +1,77 @@
+.rightbar{
+    width: 100%;
+    min-width: 250px;
+    height: calc(100vh - 50px);
+    padding-top: 15px;
+    padding-right: 5px;
+    position: relative;
+}
+
+.rightbar-form-find{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.rightbar-form-find>span{
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 10px;
+    width: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.rightbar-form-find>i{
+    font-size: 20px;
+    max-width: 20%;
+    padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.rightbar-form-find>i:hover{
+    background-color: rgb(240, 238, 238);
+}
+
+.form-input{
+    width: 90%;
+}
+.form-input input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 85%;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    color: gray;
+    border-bottom: 2px solid #000;
+}
+.form-input i{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 8px;
+    color: red;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.form-input i:hover{
+    background-color: rgb(240, 238, 238);
+}
+
+.rightbar-listFriendOnline{
+    margin-top: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: calc(100vh - 120px);
+}
+.rightbar-listFriendOnline::-webkit-scrollbar{
+    width: 5px;
+}
+.rightbar-listFriendOnline::-webkit-scrollbar-thumb{
+    background-color: rgb(204, 199, 199);
+    border-radius: 5px;
+}
+.rightbar-listFriendOnline::-webkit-scrollbar-track{
+    background-color: rgb(240, 239, 239);
+    border-radius: 5px;
+}
+

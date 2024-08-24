@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+.post{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 0px 3px 0px #000000af; 
+    box-shadow: 0px 0px 3px 0px #000000b0;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+}
+
+/* thông tin phần tác giả */
+
+.post-infoAuthor{
+    display: flex;
+    position: relative;
+}
+.post-infoAuthor-avatar{
+    margin-right: 15px;
+}
+.post-infoAuthor-avatar img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.post-infoAuthor-nameAuthor{
+    display: flex;
+    flex-direction: column;
+}
+.post-infoAuthor-nameAuthor b{
+    font-size: 14px;
+}
+.post-infoAuthor-nameAuthor b:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.post-infoAuthor-nameAuthor span{
+    font-size: 12px;
+    color: gray;
+}
+
+.post-infoAuthor-menu{
+    position: absolute;
+    right: 0px;
+}
+.post-infoAuthor-menu>i{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(116, 115, 115);
+    cursor: pointer;
+}
+.post-infoAuthor-menu>i:hover{
+    background-color: rgb(230, 230, 230);
+}
+.post-infoAuthor-menu-content{
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    right: 10px;
+    top: 25px;
+    padding: 5px 5px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.post-infoAuthor-menu-content:hover{
+    display: flex;
+}
+.post-infoAuthor-menu i:hover~.post-infoAuthor-menu-content{
+    display: flex;
+}
+.post-infoAuthor-menu-content span{
+    cursor: pointer;
+    padding: 10px 10px 10px 15px;
+    border-radius: 10px;
+    color: rgb(85, 84, 84);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+.post-infoAuthor-menu-content span i{
+    margin-right: 5px;
+}
+.post-infoAuthor-menu-content span:hover{
+    background-color: rgb(204, 204, 219);
+}
+
+/* CSS đoạn nội dung */
+
+.post-textContent{
+    margin-top: 10px; 
+}
+.post-textContent-body{
+    max-height: 500px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+.post-textContent-body::-webkit-scrollbar{
+    width: 5px;
+}
+
+.post-textContent-body::-webkit-scrollbar-thumb{
+    background-color: rgb(223, 223, 223);
+    border-radius: 10px;
+}
+.post-textContent-body h2{
+    font-size: 20px;
+}
+.post-textContent-body span{
+    font-size: 15px;
+    font-weight: 400;
+    white-space: pre-line;
+}
+.post-textContent-hashtag{
+    margin-top: 10px;
+}
+.post-textContent-hashtag a{
+    margin-left: 3px;
+    font-size: 14px;
+    color: rgb(49, 91, 209);
+    text-decoration: none;
+}
+.post-textContent-hashtag a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* CSS hình ảnh đăng lên */
+.post-listImage{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.post-listImage-slide{
+    width: 100%;
+    height: 100%;
+}
+.post-listImage-slide .slick-prev{
+    left: 20px;
+    z-index: 10;
+}
+.post-listImage-slide .slick-next{
+    right: 20px;
+    z-index: 10;
+}
+.post-listImage-slide .slick-dots{
+    bottom: 0px;
+}
+
+.post-listImage-slide button::before{
+    color: black;
+}
+.post-listImage-slide-item{
+    width: 100%;
+    height: 100%;
+    
+}
+.post-listImage-slide-item img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+/* CSS like-dislike-comment */
+
+.post-like-dislike-comments{
+    margin-top: 20px;
+    padding: 5px 0px;
+    width: 100%;
+    border-top: 1px dashed rgba(129, 128, 128, 0.747);
+    border-bottom: 1px dashed rgba(129, 128, 128, 0.747);
+    display: flex;
+    justify-content: space-around;
+}
+
+.post-common{
+    cursor: pointer;
+    height: 90%;
+    border-radius: 8px;
+    padding: 5px 50px;
+    font-weight: bold;
+}
+.post-common:hover{
+    background-color: rgb(212, 209, 209);
+}
+.post-common i{
+    font-size: 18px;
+}
+.post-common span{
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+/* CSS writeComment */
+
+.post-writeComment{
+    margin-top: 20px;
+    width: 100%;
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-writeComment-avatar{
+    
+    height: 35px;
+    width: 35px;
+}
+.post-writeComment-avatar img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.post-writeComment-input{
+    width: 85%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.post-writeComment-input input{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(233, 230, 230);
+}
+.post-writeComment-emoji{
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.post-writeComment-emoji:hover{
+    background-color: rgb(206, 204, 204);
+}
+.post-writeComment-emoji i{
+    color: rgb(97, 97, 95);
+    font-size: 24px;
+}
+.post-writeComment-picker{
+    position: absolute;
+    top: -330px;
+    left: -230px;
+    z-index: 1000;
+}
+
+/* CSS list comment */
+
+.post-listComment{
+    margin-top: 20px;
+    border-top: 1px solid gray;
+    width: 100%;
+    max-height: 500px;
+    overflow-y: scroll;
+    padding: 30px 10px 70px 10px;
+}
+.post-listComment::-webkit-scrollbar{
+    width: 8px;
+}
+
+.post-listComment::-webkit-scrollbar-thumb{
+    background-color: rgb(155, 153, 153);
+    border-radius: 10px;
+}
+
+
+/* CSS post modal */
+.post-modal{
+    position: fixed;
+    z-index: 10001;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-modal-content{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+}
+.post-modal-Image{
+    height: 80%;
+    max-width: 90%;
+    position: relative;
+}
+
+.post-modal-close{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+.post-modal-close i{
+    font-size: 30px;
+    color: white;
+    transition: all 0.3s ease;
+}
+.post-modal-close i:hover{
+    color:rgb(180, 58, 58);
+}
+.post-modal-Image img{
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    z-index: 10002;
+}
+.transform-component-module_wrapper__1_Fgj, .transform-component-module_content__2jYgh{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+.post-modal-edit, .post-modal-deletePost{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+.post-modal-edit-container{
+    position: relative;
+    width: 600px;
+    height: 700px;
+    background-color: white;
+    cursor: default;
+    border-radius: 10px;
+}
+.post-modal-edit-close{
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    padding: 5px 13px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: rgb(255, 16, 16);
+    cursor: pointer;
+    background-color: rgb(241, 238, 238);
+}
+.post-modal-edit-close:hover{
+    background-color: rgb(199, 195, 195);
+}
+
+
+.post-modal-deletePost-info{
+    position: relative;
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    cursor: default;
+    border-radius: 10px;
+}
+.post-modal-deletePost-info>p{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.list-button{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.list-button button{
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+    background-color: transparent;
+}
+
+.list-button button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* css loading */
+.post-listComment-loading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.spinner-2 {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:8px solid;
+    border-color:lightblue;
+    border-right-color: orange;
+    animation:s2 1s infinite linear;
+}
+@keyframes s2 {to{transform: rotate(1turn)}}
+
+@media screen and (min-width: 1201px) and (max-width: 1500px){
+    .post-listImage{
+        width: 100%;
+        height: 450px;
+    }  
+    .post-listImage-slide-item img{
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .post-listImage{
+        width: 100%;
+        height: 400px;
+    }
+    .post-listImage-slide-item img{
+        height: 400px;
+    }
+}

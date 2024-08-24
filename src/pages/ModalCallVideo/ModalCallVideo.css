@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.modalCallVideo{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 950px;
+    /* min-width: 1200px; */
+    display: flex;
+    flex-direction: column;
+}
+
+/* css phần bên trên gồm listVideo và chat */
+.modalCallVideo-top{
+    width: 100%;
+    display: flex;
+    height: 650px;
+    padding: 0px 0px 15px 0px ;
+}
+
+/* css listVideo */
+.modalCallVideo-top-left{
+    flex: 4;
+    height: 100%;
+    padding: 10px;
+}
+.modalCallVideo-listVideo{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(133, 126, 126);
+}
+.modalCallVideo-itemVideo{
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgb(204, 202, 202);
+}
+.modalCallVideo-itemVideo p{
+    position: absolute;
+    font-size: 24px;
+    color: gray;
+    font-weight: bold;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+}
+.modalCallVideo-itemVideo img{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    object-fit: cover;
+}
+.modalCallVideo-itemVideo video{
+    width: 100%;
+    height: 100%;
+}
+.modalCallVideo-listMenu{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.listItem_menu{
+    margin: 0 10px;
+}
+.listItem_menu i{
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 32px;
+    color:rgb(68, 67, 67);
+    transition: all 0.5s ease;
+}
+.odd{
+    color:rgb(131, 130, 130)!important;
+}
+.listItem_menu i:hover{
+    background-color: rgb(201, 201, 198);
+}
+
+
+
+/* css chat */
+.modalCallVideo-top-right{
+    flex: 2;
+    height: 100%;
+    padding: 5px;
+}
+.modalCallVideo-chat{
+    width: 100%;
+    height: 100%;
+}
+.modalCallVideo-listMessage{
+    width: 100%;
+    height: 530px;
+    overflow-y: scroll;
+    padding: 5px;
+}
+.modalCallVideo-itemMessage{
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+.itemMessage-avatar{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.itemMessage-avatar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.itemMessage-message{
+    padding: 6px 15px;
+    border-radius: 20px;
+    background-color: rgb(230, 228, 228);
+}
+.itemMessage-message-top{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.itemMessage-message strong{
+    font-size: 13px;
+    color:rgb(88, 87, 87);
+}
+.itemMessage-message span{
+    font-size: 11px;
+    font-style: italic;
+    color:rgb(114, 114, 114);
+}
+.itemMessage-message p{
+    max-inline-size: 330px;
+    overflow-wrap: break-word;
+    white-space: pre-line;
+    font-size: 14px;
+}
+.sender{
+    /* float: right; */
+    display: flex; 
+    width: 100%;
+    justify-content: flex-end;
+}
+.senderColor{
+    
+    margin-right: 0;
+   background-color: rgb(195, 195, 197)!important; 
+}
+
+
+.modalCallVideo-inputSend{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.modalCallVideo-input{
+    width: 85%;
+    margin-top: 8px;
+    height: 100%;
+}
+.modalCallVideo-input input{
+    width: 100%;
+    padding: 10px 20px; 
+    outline: none;
+}
+.modalCallVideo-input input:focus{
+    border: 2px solid rgb(74, 140, 202);
+    box-shadow: 0px 0px 2px 2px rgb(93, 149, 202);
+}
+.modalCallVideo-Send{
+    width: 15%;
+    margin-top: 8px;
+    height: 100%;
+    margin-left: 10px;
+}
+.modalCallVideo-Send i{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(114, 114, 114);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+.modalCallVideo-Send i:hover{
+    background-color: rgb(223, 221, 221);
+}
+
+
+
+
+/* css phần bên dưới danh sách người dùng */
+.modalCallVideo-bottom{
+    width: 100%;
+    height: calc(100% - 750px);
+    display: flex;
+    border-top: 2px dotted rgb(83, 83, 83);
+}
+.modalCallVideo-bottom-left{
+    flex: 2;
+    height: 300px;
+    padding: 10px;
+    border-right: 2px dotted gray;
+
+}
+.modalCallVideo-bottom-left p{
+    font-size:  14px;
+    color: gray;
+    margin-bottom: 15px;
+}
+.modalCallVideo-bottom-left input{
+    padding: 10px 10px;
+    outline: none;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+.modalCallVideo-bottom-left button{
+    outline: none;
+    padding: 10px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.modalCallVideo-bottom-right{
+    flex: 4;
+    height: 100%;
+}
+.modalCallVideo-addMember{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+.modalCallVideo-addMember p{
+    font-size:  14px;
+    color: gray;
+    margin-bottom: 15px;
+}
+.modalCallVideo-addMember input{
+    padding: 10px 5px;
+    width: 200px;
+    outline: none;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.modalCallVideo-listMember{
+    width: 100%;
+    display: flex;
+}
+.modalCallVideo-listMember-left{
+    flex: 1;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+    border: 1.5px dotted gray;
+}
+.modalCallVideo-listMember-right{
+    flex: 1;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+    border: 1.5px dotted gray;
+}
+.modalCallVideo-listMember-left p, .modalCallVideo-listMember-right p{
+    font-size:  14px;
+    color: gray;
+    margin-bottom: 15px;
+}
+.modalCallVideo-listMemberFollowing span{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 30px;
+    color: rgb(87, 85, 85);
+    font-weight: bold;
+}
+.modalCallVideo-itemMember{
+    width: 100%;
+    display: flex;
+    margin: 5px 0;
+    align-items: center;
+    position: relative;
+}
+.modalCallVideo-itemMember-img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.modalCallVideo-itemMember-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.modalCallVideo-itemMember-button{
+    position: absolute;
+    right: 20px;
+}
+.modalCallVideo-itemMember-button button{
+    padding: 8px;
+    border: 1.5px solid black;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.modalCallVideo-listMember-left::-webkit-scrollbar,
+.modalCallVideo-listMember-right::-webkit-scrollbar,
+.modalCallVideo-listVideo::-webkit-scrollbar,
+.modalCallVideo-listMessage::-webkit-scrollbar{
+    width: 8px;
+}
+.modalCallVideo-listMember-left::-webkit-scrollbar-track,
+.modalCallVideo-listMember-right::-webkit-scrollbar-track,
+.modalCallVideo-listVideo::-webkit-scrollbar-track,
+.modalCallVideo-listMessage::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 10px;
+}
+.modalCallVideo-listMember-left::-webkit-scrollbar-thumb,
+.modalCallVideo-listMember-right::-webkit-scrollbar-thumb,
+.modalCallVideo-listVideo::-webkit-scrollbar-thumb,
+.modalCallVideo-listMessage::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .itemMessage-message p{
+        max-inline-size: 230px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .itemMessage-message p{
+        max-inline-size: 150px;
+    }
+}
